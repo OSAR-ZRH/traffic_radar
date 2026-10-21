@@ -3,7 +3,7 @@
 </style></head><body><div hidden aria-hidden="true"><span id="status"></span><span id="age"></span><span id="locationstatus">Standort wird ermittelt …</span></div><main><div class="mapwrap"><div id="map" aria-label="Karte mit Flugzeugen innerhalb von 20 NM um deinen Standort"></div><div id="maperror" class="maperror" hidden></div></div><div class="controls"><button id="locate" aria-label="Zu meinem Standort">⌖</button><div class="zoomgroup"><button id="zoomout" aria-label="Herauszoomen">−</button><div class="readout"><b>20 NM</b><small>DATENUMKREIS</small></div><button id="zoomin" aria-label="Hineinzoomen">+</button></div><button id="reset">⌖ 20 NM</button></div><div id="notice" role="alert"></div><div id="health" role="status"></div><div id="selected"></div>
 <div class="summary"><div class="stat"><b id="total">0</b><small>Im Umkreis</small></div><div class="stat"><b id="nearest">—</b><small>Nächstes Flugzeug</small></div></div>
 <div class="listhead"><h2>Flugzeuge</h2><span class="chip">20 NM · nächste zuerst</span></div><div id="list" class="list"><div class="empty">Standort wird ermittelt …</div></div>
-<footer><a href="https://adsb.fi/" target="_blank" rel="noopener">Daten</a> · ca. alle 10 s · V7<br>Standort gerundet</footer></main><script src=""></script><script>
+<footer><a href="" target="_blank" rel="noopener">Daten</a> · ca. alle 10 s · V7<br>Standort gerundet</footer></main><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
 'use strict';
 const $=id=>document.getElementById(id),BASE=20;
 let HOME=null,locationReady=false,fixTime=0,accuracy=0,watchId=null;
